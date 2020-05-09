@@ -1,0 +1,6 @@
+<button (click)='open()' >открыть окно</button>
+<div *ngIf='show' class="container" (click)="close()">
+    <div class="modal" (click)='modalHandler($event)'>
+        <ng-content></ng-content>
+    </div>
+</div>

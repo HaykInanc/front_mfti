@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="film" #film_elem>
+        <div *ngFor="let item of data" class="frame">
+            <p>{{ item.title }}</p>
+            <img src="{{ item.url }}" alt="">
+        </div>
+    </div>
+</div>
+<div class="triggers">
+    <button (click)="goLeft()"><</button>
+    <button (click)="goRight()">></button>
+</div>
